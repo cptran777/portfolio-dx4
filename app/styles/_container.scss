@@ -1,0 +1,7 @@
+/* Contains the styling for the overall application container */
+
+/* Basic Implementation of containing the application within the specified window size */
+html, body, .ember-application > .ember-view, #app-container {
+  height: 100%;
+  width: 100%;
+}
