@@ -1,0 +1,24 @@
+/* Styling for components that will be used throughout many routes */
+
+html {
+  .card {
+    padding: 1% 25px 1% 25px;
+    border: 5px outset black;
+
+    .card-title {
+      text-align: center;
+    }
+
+    .card-body {
+      padding: 5px 5px 5px 5px;
+      border: 2px outset black;
+      text-align: center;
+    }
+
+    .card-img {
+      max-height: 150px;
+      width: 75%;
+    }
+
+  }
+}
