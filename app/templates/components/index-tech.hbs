@@ -1,11 +1,7 @@
 <div class={{if expandProjects "content-box hide" 
   (if expandSkills "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}
   {{action "toggleSkills"}}>
-  {{#if expandSkills}}
-    Expanded Box
-  {{else}}
-    {{my-card class="card" title="My Skills" source="assets/images/logo-js.png"}}
-  {{/if}}
+  {{my-card class="card" title="My Skills" source="assets/images/logo-js.png" expanded=expandSkills}}
 </div>
 <div class={{if expandSkills "content-box hide" 
   (if expandProjects "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}

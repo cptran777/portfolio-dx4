@@ -2,4 +2,11 @@
   padding: 2% 2% 2% 2%;
 }
 
+.content-box {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 @import "body-components";
