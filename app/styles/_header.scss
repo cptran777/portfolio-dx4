@@ -1,6 +1,15 @@
 /* Contains the styling for the top banner in the application */
 $text-color: red;
 
-header {
-  color: $text-color;
+.header-container {
+
+  height: 100%;
+  /* Testing header area, delete once header is ready */
+  background-color: #ddd;
+  border: 10px solid black;
+  /***********************************************************/
+  header {
+    color: $text-color;
+  }
+
 }

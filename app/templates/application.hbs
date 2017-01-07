@@ -1,7 +1,9 @@
 <div id="app-container" class="container-fluid">
-  {{header-container class="row"}}
-  <main id="app-body" class="row">
-    {{outlet}}
-  </main>
-  {{footer-container class="row"}}
+  <div id="app-inner-container" class="row">
+    {{header-container class="col-sm-12 col-md-3 header-container"}}
+    <main id="app-body" class="col-sm-12 col-md-9">
+      {{outlet}}
+    </main>
+    {{footer-container class="col-md-12"}}
+  </div>
 </div>
