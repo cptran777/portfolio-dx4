@@ -6,6 +6,17 @@ html, body, .ember-application > .ember-view, #app-container, #app-inner-contain
   width: 100%;
 }
 
+html {
+  #app-container {
+    padding: 0 0 0 0;
+
+    #app-inner-container {
+      margin: 0 0 0 0;
+    }
+    
+  }
+}
+
 .hide {
   display: none;
 }

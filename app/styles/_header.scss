@@ -1,15 +1,40 @@
 /* Contains the styling for the top banner in the application */
-$text-color: red;
+$base-color: white;
 
 .header-container {
 
   height: 100%;
+  overflow: auto;
   /* Testing header area, delete once header is ready */
-  background-color: #ddd;
-  border: 10px solid black;
+  background-color: rgba(150, 210, 210, 0.8);
   /***********************************************************/
   header {
-    color: $text-color;
+    color: $base-color;
+
+    padding-top: 5%;
+
+    #profile-container, #profile-banner, #profile-icons {
+      text-align: center;
+    }
+
+    #profile-container {
+
+      #profile-img {
+        border-radius: 50%;
+        border: 10px outset #9cf;
+      }
+    }
+
+    #profile-banner {
+
+      #title {
+        font-size: 2vw;
+      }
+    }
+
+    #profile-icons {
+
+    }
   }
 
 }
