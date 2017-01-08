@@ -5,9 +5,8 @@ $base-color: white;
 
   height: 100%;
   overflow: auto;
-  /* Testing header area, delete once header is ready */
   background-color: rgba(150, 210, 210, 0.8);
-  /***********************************************************/
+
   header {
     color: $base-color;
 
@@ -21,7 +20,7 @@ $base-color: white;
 
       #profile-img {
         border-radius: 50%;
-        border: 10px outset #9cf;
+        border: 10px outset #def;
       }
     }
 
