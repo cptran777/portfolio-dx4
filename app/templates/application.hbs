@@ -1,6 +1,6 @@
 <div id="app-container" class="container-fluid">
   <div id="app-inner-container" class="row">
-    {{header-container class="col-sm-12 col-md-3 header-container"}}
+    {{header-container class="col-sm-12 col-md-3 header-container" goTo=(action "goTo")}}
     <main id="app-body" class="col-sm-12 col-md-9">
       {{outlet}}
       {{footer-container class="col-md-12"}}
