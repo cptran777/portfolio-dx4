@@ -31,7 +31,25 @@ $base-color: white;
       }
     }
 
-    #profile-icons {
+    #profile-nav {
+
+      .nav-button {
+        border-radius: 10px;
+        background-color: red;
+        padding: 2% 2% 2% 2%;
+        margin: 1% 4% 1% 4%;
+        text-align: center;
+      }
+
+      .nav-button a {
+        color: $base-color;
+        text-decoration: none;
+      }
+
+      .nav-button:hover {
+        background-color: blue;
+        font-weight: bold;
+      }
 
     }
   }
