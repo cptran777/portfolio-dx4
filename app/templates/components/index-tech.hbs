@@ -1,7 +1,11 @@
 <div class={{if hideSkills "content-box hide" 
   (if expandSkills "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}
   {{action "toggleSkills"}}>
-  {{my-card class="card" title="My Skills" source="assets/images/logo-js.png" expanded=expandSkills}}
+  {{#my-card class="card" title="My Skills" source="assets/images/logo-js.png" expanded=expandSkills
+  preview="Specializing in web development and creating user experiences with modern frameworks such
+  as Ember, React, and Angular. Click to expand and see what else I can do!"}}
+    {{index-tech-skills class="col-md-12"}}
+  {{/my-card}}
 </div>
 <div class={{if hideProjects "content-box hide" 
   (if expandProjects "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}
