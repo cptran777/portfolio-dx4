@@ -1,20 +1,28 @@
 <div class="row icon-row">
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
-  <div class="col-sm-6 col-md-2 icon-container">
-    <img src="assets/images/logo-js.png" class="icon-img" />
-  </div>
+  {{#each skillLogoA as |skill|}}
+    <div class="col-xs-6 col-sm-6 col-md-2 icon-container">
+      <img src={{skill}} class="icon-img" />
+    </div>
+  {{/each}}
+</div>
+<div class="row icon-row">
+  {{#each skillLogoB as |skill|}}
+    <div class="col-xs-6 col-sm-6 col-md-2 icon-container">
+      <img src={{skill}} class="icon-img" />
+    </div>
+  {{/each}}
+</div>
+<div class="row icon-row">
+  {{#each skillLogoC as |skill|}}
+    <div class="col-xs-6 col-sm-6 col-md-2 icon-container">
+      <img src={{skill}} class="icon-img" />
+    </div>
+  {{/each}}
+</div>
+<div class="row icon-row">
+  {{#each skillLogoD as |skill|}}
+    <div class="col-xs-6 col-sm-6 col-md-2 icon-container">
+      <img src={{skill}} class="icon-img" />
+    </div>
+  {{/each}}
 </div>
