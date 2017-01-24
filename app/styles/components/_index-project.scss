@@ -1,0 +1,16 @@
+@import '../util/variables';
+
+html {
+  .card-heading {
+    text-align: center;
+  }
+
+  .project-row {
+    padding-left: 0%;
+
+    .project-img {
+      height: 125px;
+      width: 95%;
+    }
+  }
+}

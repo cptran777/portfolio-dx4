@@ -1,1 +1,18 @@
+<div class="row icon-row project-row">
+  {{#each mainProjects as |project|}}
+    <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 icon-container">
+      <img src={{project.path}} class="icon-img project-img" />
+      <p>{{project.name}}</p>
+    </div>
+  {{/each}}
+</div>
+<div class="row">
+  <div class="col-md-3 col-md-offset-5 card-heading">Other</div>
+</div>
+<div class="row icon-row project-row"></div>
+<div class="row">
+  <div class="col-md-3 col-md-offset-5 card-heading">In-Progress</div>
+</div>
+<div class="row icon-row project-row"></div>
+
 {{yield}}
