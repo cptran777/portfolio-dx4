@@ -12,14 +12,20 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{header-container}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  // Test for rendering
+  assert.ok(this.$('header'));
 
-  // Template block usage:
-  this.render(hbs`
-    {{#header-container}}
-      template block text
-    {{/header-container}}
-  `);
+});
 
-  assert.equal(this.$().text().trim(), 'template block text');
+test('it allows navigation on the bar', function(assert) {
+
+  this.set('externalAction', (actual) => {
+    let expected = 'portfolio';
+    assert.equal(actual, expected, 'clicked link will pass that path name to the action');
+  });
+
+  this.render(hbs`{{header-container goTo=(action externalAction)}}`);
+
+  this.$('#portfolio-link').click();
+
 });

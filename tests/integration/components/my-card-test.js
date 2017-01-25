@@ -12,14 +12,6 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{my-card}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.ok(this.$());
 
-  // Template block usage:
-  this.render(hbs`
-    {{#my-card}}
-      template block text
-    {{/my-card}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

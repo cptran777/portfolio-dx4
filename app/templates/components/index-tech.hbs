@@ -1,5 +1,6 @@
 <div class={{if hideSkills "content-box hide" 
   (if expandSkills "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}
+  id="skills-box"
   {{action "toggleSkills"}}>
   {{#my-card class="card" title="My Skills" source="assets/images/logo-vr.jpg" expanded=expandSkills
   preview="Specializing in web development and creating user experiences with modern frameworks such
@@ -9,6 +10,7 @@
 </div>
 <div class={{if hideProjects "content-box hide" 
   (if expandProjects "col-xs-12 col-sm-12 col-md-12 content-box" "col-xs-12 col-sm-12 col-md-6 content-box")}}
+  id="projects-box"
   {{action "toggleProjects"}}>
   {{#my-card class="card" title="My Projects" source="assets/images/logo-vr.jpg" expanded=expandProjects
   preview="I enjoy building fun applications, especially games. Click to see some of my projects!"}}

@@ -12,14 +12,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{footer-container}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  // assert renders
+  assert.ok(this.$('footer'));
 
-  // Template block usage:
-  this.render(hbs`
-    {{#footer-container}}
-      template block text
-    {{/footer-container}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

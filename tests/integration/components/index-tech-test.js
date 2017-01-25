@@ -12,14 +12,16 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{index-tech}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.ok(this.$());
 
-  // Template block usage:
-  this.render(hbs`
-    {{#index-tech}}
-      template block text
-    {{/index-tech}}
-  `);
+});
 
-  assert.equal(this.$().text().trim(), 'template block text');
+test('it resizes when clicked', function(assert) {
+
+  this.render(hbs`{{index-tech}}`);
+
+  this.$('#skills-box').click();
+
+  assert.equal(this.$('#skills-box').hasClass('col-md-12'), true);
+  assert.equal(this.$('#projects-box').hasClass('hide'), true);
 });

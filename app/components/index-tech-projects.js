@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 const projectListMain = ['avalon.png', 'reeltime.png', 'labit.png'];
-const projectListOther = [];
+// const projectListOther = [];
 // const projectListProgress = [];
 
 const concatAll = (str, arr) => {
@@ -15,7 +15,7 @@ const capitalize = (str) => {
 };
 
 export default Ember.Component.extend({
-  mainProjects: concatAll('assets/images/project-', projectListMain).map((path, idx) => {
+  mainProjects: concatAll('assets/images/project-', projectListMain).map((path) => {
     return {
       name: capitalize(path.split(/[-.]/)[1]),
       path

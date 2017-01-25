@@ -12,14 +12,6 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{index-interests}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.ok(this.$());
 
-  // Template block usage:
-  this.render(hbs`
-    {{#index-interests}}
-      template block text
-    {{/index-interests}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });
